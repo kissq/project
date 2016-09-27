@@ -1,0 +1,410 @@
+html,
+body,
+div,
+ul,
+li,
+img,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  position: relative;
+  width: 10rem;
+  height: 1.3125rem;
+  background-color: #6852df;
+  font-size: 75px;
+  position: fixed;
+  top: 0;
+  line-height: 1.3125rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+[data-dpr='2'] .header {
+  font-size: 150px;
+}
+
+[data-dpr='3'] .header {
+  font-size: 225px;
+}
+
+.header #sp2 {
+  float: left;
+  line-height: 1.3125rem;
+  margin-left: 0.1875rem;
+}
+
+.list {
+  position: absolute;
+  z-index: 100;
+  display: none;
+  width: 6.25rem;
+  height: 17.75rem;
+  background-color: #333333;
+  color: #cccccc;
+  font-size: 50px;
+  position: fixed;
+  top: 1.3125rem;
+}
+
+[data-dpr='2'] .list {
+  font-size: 100px;
+}
+
+[data-dpr='3'] .list {
+  font-size: 150px;
+}
+
+.list span {
+  color: #ffffff;
+  font-size: 70px;
+}
+
+[data-dpr='2'] .list span {
+  font-size: 140px;
+}
+
+[data-dpr='3'] .list span {
+  font-size: 210px;
+}
+
+.list li {
+  width: 6.25rem;
+  height: 1.5625rem;
+  border-bottom: 0.013333rem solid #808080;
+  text-align: center;
+  line-height: 1.5625rem;
+}
+
+.list li .icon-angle-right {
+  float: right;
+  margin-right: 0.15625rem;
+  line-height: 1.5625rem;
+}
+
+.list li .sp1 {
+  margin-right: 0.46875rem;
+}
+
+.list li a {
+  text-decoration: none;
+  color: #cccccc;
+}
+
+.content {
+  margin-top: 1.5625rem;
+  width: 10rem;
+  height: 0.90625rem;
+  color: #808080;
+  font-size: 40px;
+  line-height: 0.90625rem;
+}
+
+[data-dpr='2'] .content {
+  font-size: 80px;
+}
+
+[data-dpr='3'] .content {
+  font-size: 120px;
+}
+
+.content span:nth-child(1) {
+  margin-left: 0.15625rem;
+  margin-right: 0.15625rem;
+  color: aqua;
+}
+
+.hr {
+  margin-top: 0.125rem;
+  width: 10rem;
+  height: 0.1875rem;
+  background-color: #cccccc;
+}
+
+.item2 {
+  width: 10rem;
+  height: 1.25rem;
+  overflow: hidden;
+}
+
+.item2 .a1 {
+  width: 0.125rem;
+  height: 0.625rem;
+  margin-top: 0.25rem;
+  margin-right: 0.1875rem;
+  background-color: #4652dc;
+  float: left;
+}
+
+.item2 .a2 {
+  width: 6.5521875rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  font-size: 50px;
+  float: left;
+  color: #4652dc;
+}
+
+[data-dpr='2'] .item2 .a2 {
+  font-size: 100px;
+}
+
+[data-dpr='3'] .item2 .a2 {
+  font-size: 150px;
+}
+
+.item3 {
+  width: 10rem;
+  height: auto;
+  margin-top: 0.625rem;
+}
+
+.item3 .b {
+  width: 10rem;
+  height: 2.71875rem;
+  border-bottom: 0.03125rem solid #cccccc;
+}
+
+.item3 .b img {
+  float: left;
+  margin-left: 0.15625rem;
+  margin-right: 0.15625rem;
+  margin-top: 0.25rem;
+}
+
+.item3 .b div {
+  margin-top: 0.25rem;
+  width: 6.6875rem;
+  float: left;
+}
+
+.item3 .b div p {
+  font-size: 45px;
+  color: #808080;
+}
+
+[data-dpr='2'] .item3 .b div p {
+  font-size: 90px;
+}
+
+[data-dpr='3'] .item3 .b div p {
+  font-size: 135px;
+}
+
+.item3 .item3-1 {
+  width: 10rem;
+  height: 2.71875rem;
+  border-bottom: 0.03125rem solid #cccccc;
+}
+
+.item3 .item3-1 img {
+  float: left;
+  margin-left: 0.15625rem;
+  margin-right: 0.15625rem;
+  margin-top: 0.25rem;
+}
+
+.item3 .item3-1 div {
+  margin-top: 0.25rem;
+  width: 6.6875rem;
+  float: left;
+}
+
+.item3 .item3-1 div p {
+  font-size: 45px;
+  color: #808080;
+}
+
+[data-dpr='2'] .item3 .item3-1 div p {
+  font-size: 90px;
+}
+
+[data-dpr='3'] .item3 .item3-1 div p {
+  font-size: 135px;
+}
+
+.item3 .item3-2 {
+  width: 10rem;
+  height: 2.71875rem;
+  border-bottom: 0.03125rem solid #cccccc;
+}
+
+.item3 .item3-2 img {
+  float: left;
+  margin-left: 0.15625rem;
+  margin-right: 0.15625rem;
+  margin-top: 0.25rem;
+}
+
+.item3 .item3-2 div {
+  margin-top: 0.25rem;
+  width: 6.6875rem;
+  float: left;
+}
+
+.item3 .item3-2 div p {
+  font-size: 45px;
+  color: #808080;
+}
+
+[data-dpr='2'] .item3 .item3-2 div p {
+  font-size: 90px;
+}
+
+[data-dpr='3'] .item3 .item3-2 div p {
+  font-size: 135px;
+}
+
+.item3 .item3-3 {
+  width: 10rem;
+  height: 2.71875rem;
+  border-bottom: 0.03125rem solid #cccccc;
+}
+
+.item3 .item3-3 img {
+  float: left;
+  margin-left: 0.15625rem;
+  margin-right: 0.15625rem;
+  margin-top: 0.25rem;
+}
+
+.item3 .item3-3 div {
+  margin-top: 0.25rem;
+  width: 6.6875rem;
+  float: left;
+}
+
+.item3 .item3-3 div p {
+  font-size: 45px;
+  color: #808080;
+}
+
+[data-dpr='2'] .item3 .item3-3 div p {
+  font-size: 90px;
+}
+
+[data-dpr='3'] .item3 .item3-3 div p {
+  font-size: 135px;
+}
+
+.item3 .item3-4 {
+  width: 10rem;
+  height: 2.71875rem;
+  border-bottom: 0.03125rem solid #cccccc;
+}
+
+.item3 .item3-4 img {
+  float: left;
+  margin-left: 0.15625rem;
+  margin-right: 0.15625rem;
+  margin-top: 0.25rem;
+}
+
+.item3 .item3-4 div {
+  margin-top: 0.25rem;
+  width: 6.6875rem;
+  float: left;
+}
+
+.item3 .item3-4 div p {
+  font-size: 45px;
+  color: #808080;
+}
+
+[data-dpr='2'] .item3 .item3-4 div p {
+  font-size: 90px;
+}
+
+[data-dpr='3'] .item3 .item3-4 div p {
+  font-size: 135px;
+}
+
+.item3 .item3-5 {
+  width: 10rem;
+  height: 2.71875rem;
+  border-bottom: 0.03125rem solid #cccccc;
+}
+
+.item3 .item3-5 img {
+  float: left;
+  margin-left: 0.15625rem;
+  margin-right: 0.15625rem;
+  margin-top: 0.25rem;
+}
+
+.item3 .item3-5 div {
+  margin-top: 0.25rem;
+  width: 6.6875rem;
+  float: left;
+}
+
+.item3 .item3-5 div p {
+  font-size: 45px;
+  color: #808080;
+}
+
+[data-dpr='2'] .item3 .item3-5 div p {
+  font-size: 90px;
+}
+
+[data-dpr='3'] .item3 .item3-5 div p {
+  font-size: 135px;
+}
+
+.item4 {
+  width: 10rem;
+  height: 1rem;
+  margin-top: 0.21875rem;
+  background-color: #6852df;
+  font-size: 50px;
+  color: #ffffff;
+}
+
+[data-dpr='2'] .item4 {
+  font-size: 100px;
+}
+
+[data-dpr='3'] .item4 {
+  font-size: 150px;
+}
+
+.item4 span {
+  float: right;
+  line-height: 1rem;
+  margin-right: 0.15625rem;
+}
+
+.item5 {
+  width: 10rem;
+  height: 1.5625rem;
+  font-size: 30px;
+}
+
+[data-dpr='2'] .item5 {
+  font-size: 60px;
+}
+
+[data-dpr='3'] .item5 {
+  font-size: 90px;
+}
+
+.item5 p {
+  text-align: center;
+  color: #808080;
+}
+
+.item5 p a {
+  text-decoration: none;
+  color: #808080;
+}

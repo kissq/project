@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width ,initial-scale=1 ,maximum-scale=1 ,user-scalable=no"/>-->
+    <title></title>
+    <!--<link rel="stylesheet/less" href="project/less/shop.less"/>-->
+    <script src="js/zepto-0.0.1-2016-09-09.min.js"></script>
+    <!--<script src="project/js/less.js"></script>-->
+    <link rel="stylesheet" href="css/font-awesome-0.0.1-2016-09-09.min.css"/>
+    <script src="js/swiper-3-0.0.1-2016-09-09.min.js"></script>
+    <link rel="stylesheet" href="css/swiper-3-0.0.1-2016-09-09.min.css"/>
+    <link rel="stylesheet" href="css/animate-0.0.1-2016-09-09.min.css"/>
+    <link rel="stylesheet" href="css/shop-0.0.1-2016-09-09.min.css"/>
+    <script>
+        ~function(){
+            resRem();
+            function resRem(){
+                var html=document.documentElement;
+                var winWidth=document.documentElement.clientWidth||document.body.clientWidth;
+                html.style.fontSize=winWidth/10+'px';
+                console.log(getComputedStyle(html).fontSize);
+            }
+            window.onresize=function(){
+                resRem();
+            }
+        }()
+    </script>
+</head>
+<body>
+<div class="header">
+    <span class="icon-chevron-left"></span>
+    <span class="sp1">购物车</span>
+</div>
+<div class="content">
+    <p>你的购物车暂无商品></p>
+    <input type="button" value="继续购物"/>
+</div>
+<script src="js/index2-0.0.1-2016-09-09.min.js"></script>
+</body>
+</html>

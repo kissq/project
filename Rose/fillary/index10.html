@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!--<link rel="stylesheet/less" href="project/less/index10.less"/>-->
+    <script src="js/zepto-0.0.1-2016-09-09.min.js"></script>
+    <!--<script src="project/js/less.js"></script>-->
+    <link rel="stylesheet" href="css/font-awesome-0.0.1-2016-09-09.min.css"/>
+    <script src="js/swiper-3-0.0.1-2016-09-09.min.js"></script>
+    <link rel="stylesheet" href="css/swiper-3-0.0.1-2016-09-09.min.css"/>
+    <link rel="stylesheet" href="css/animate-0.0.1-2016-09-09.min.css"/>
+    <link rel="stylesheet" href="css/index10-0.0.1-2016-09-09.min.css"/>
+    <script>
+        ~function(){
+            resRem();
+            function resRem(){
+                var html=document.documentElement;
+                var winWidth=document.documentElement.clientWidth||document.body.clientWidth;
+                html.style.fontSize=winWidth/10+'px';
+                console.log(getComputedStyle(html).fontSize);
+            }
+            window.onresize=function(){
+                resRem();
+            }
+        }()
+    </script>
+</head>
+<body>
+<div class="header">
+    <div class="h1"><span class="icon-chevron-left"></span></div>
+    <div class="h3"><span>...</span></div>
+    <div class="h2"><span class="icon-gift"></span></div>
+    <div class="h4"><span class="icon-home"></span></div>
+    <div class="h5"><span class="icon-random"></span></div>
+</div>
+<div class="item1">
+<p>马卡龙甜点法国进口甜品蛋糕正宗零食</p>
+</div>
+<div class="item2">
+    <span>￥118.00</span>
+    <p>市场价：<del>￥120.00</del></p>
+</div>
+<div class="item3">
+    <div class="maple-tab clearFix">
+        <ul>
+            <li class="active"><p class="m-border-right">产品详情</p></li>
+            <li><p>产品参数</p></li>
+        </ul>
+    </div>
+
+    <!--列表内容-->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide tab-content-1">
+                <p></p>
+                <img src="img/t1.jpg" alt=""/>
+                <br/>
+                <br/>
+                <img src="img/t2.jpg" alt=""/>
+                <br/>
+                <br/>
+                <img src="img/t3.jpg" alt=""/>
+                <div class="a1">
+                    <span>推荐产品</span>
+                    <div class="a1-1">
+                        <p>蔓越莓提子小面包营养早餐</p>
+                    </div>
+                    <div class="a1-2">
+                        <p>韩国原装进口正品乐天粒粒葡萄汁</p>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <br/>
+            </div>
+            <div class="swiper-slide tab-content-2">
+                <div class="b1">
+                    <span class="b1-1">编号</span><span class="b1-2">A001</span>
+                </div>
+                <div class="b1">
+                    <span class="b1-1">市场价</span><span class="b1-2"><del>￥ 129.0</del></span>
+                </div>
+                <div class="b1">
+                    <span class="b1-1">价格</span><span class="b1-2">￥ 118.0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="item4">
+    <input type="button" value="加入购物车" id="btn1"/>
+    <input type="button" value="立即购买" id="btn2"/>
+</div>
+<script src="js/index10-0.0.1-2016-09-09.min.js"></script>
+</body>
+</html>

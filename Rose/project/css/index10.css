@@ -1,0 +1,474 @@
+html,
+body,
+div,
+ul,
+li,
+img,
+a,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 4;
+  width: 10rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.header .a {
+  width: 0.875rem;
+  height: 0.875rem;
+  border-radius: 0.4375rem;
+  font-size: 45px;
+  margin-left: 0.15625rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  line-height: 0.875rem;
+  text-align: center;
+  margin-top: 0.09375rem;
+}
+
+[data-dpr='2'] .header .a {
+  font-size: 90px;
+}
+
+[data-dpr='3'] .header .a {
+  font-size: 135px;
+}
+
+.header .h1 {
+  width: 0.875rem;
+  height: 0.875rem;
+  border-radius: 0.4375rem;
+  font-size: 45px;
+  margin-left: 0.15625rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  line-height: 0.875rem;
+  text-align: center;
+  margin-top: 0.09375rem;
+  float: left;
+}
+
+[data-dpr='2'] .header .h1 {
+  font-size: 90px;
+}
+
+[data-dpr='3'] .header .h1 {
+  font-size: 135px;
+}
+
+.header .h2 {
+  width: 0.875rem;
+  height: 0.875rem;
+  border-radius: 0.4375rem;
+  font-size: 45px;
+  margin-left: 0.15625rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  line-height: 0.875rem;
+  text-align: center;
+  margin-top: 0.09375rem;
+  float: right;
+  margin-right: 0.15625rem;
+}
+
+[data-dpr='2'] .header .h2 {
+  font-size: 90px;
+}
+
+[data-dpr='3'] .header .h2 {
+  font-size: 135px;
+}
+
+.header .h3 {
+  width: 0.875rem;
+  height: 0.875rem;
+  border-radius: 0.4375rem;
+  font-size: 45px;
+  margin-left: 0.15625rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  line-height: 0.875rem;
+  text-align: center;
+  margin-top: 0.09375rem;
+  float: right;
+  margin-right: 0.15625rem;
+}
+
+[data-dpr='2'] .header .h3 {
+  font-size: 90px;
+}
+
+[data-dpr='3'] .header .h3 {
+  font-size: 135px;
+}
+
+.header .b {
+  display: none;
+  font-size: 45px;
+  width: 0.875rem;
+  height: 0.875rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 0.4375rem;
+  line-height: 0.875rem;
+  text-align: center;
+}
+
+[data-dpr='2'] .header .b {
+  font-size: 90px;
+}
+
+[data-dpr='3'] .header .b {
+  font-size: 135px;
+}
+
+.header .h4 {
+  position: fixed;
+  top: 1.5rem;
+  right: 0.15625rem;
+  display: none;
+  font-size: 45px;
+  width: 0.875rem;
+  height: 0.875rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 0.4375rem;
+  line-height: 0.875rem;
+  text-align: center;
+  animation-delay: .1s;
+}
+
+[data-dpr='2'] .header .h4 {
+  font-size: 90px;
+}
+
+[data-dpr='3'] .header .h4 {
+  font-size: 135px;
+}
+
+.header .h5 {
+  position: fixed;
+  top: 2.75rem;
+  right: 0.15625rem;
+  display: none;
+  font-size: 45px;
+  width: 0.875rem;
+  height: 0.875rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 0.4375rem;
+  line-height: 0.875rem;
+  text-align: center;
+  animation-delay: .3s;
+}
+
+[data-dpr='2'] .header .h5 {
+  font-size: 90px;
+}
+
+[data-dpr='3'] .header .h5 {
+  font-size: 135px;
+}
+
+.item1 {
+  position: relative;
+  z-index: 1;
+  width: 10rem;
+  height: 10rem;
+  background: url("../img/d1.jpg") no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.item1 p {
+  width: 10rem;
+  text-align: center;
+  font-size: 50px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+}
+
+[data-dpr='2'] .item1 p {
+  font-size: 100px;
+}
+
+[data-dpr='3'] .item1 p {
+  font-size: 150px;
+}
+
+.item2 {
+  width: 10rem;
+  height: 2.2621875rem;
+  border-bottom: 0.015625rem solid #ccc;
+}
+
+.item2 span {
+  font-size: 70px;
+  color: #007aff;
+  margin-left: 0.25rem;
+}
+
+[data-dpr='2'] .item2 span {
+  font-size: 140px;
+}
+
+[data-dpr='3'] .item2 span {
+  font-size: 210px;
+}
+
+.item2 p {
+  font-size: 40px;
+  color: #808080;
+  margin-left: 0.3125rem;
+}
+
+[data-dpr='2'] .item2 p {
+  font-size: 80px;
+}
+
+[data-dpr='3'] .item2 p {
+  font-size: 120px;
+}
+
+.item3 {
+  /*tab活动状态样式*/
+}
+
+.item3 .maple-tab {
+  background-color: #fff;
+  width: 100%;
+}
+
+.item3 .maple-tab ul {
+  width: 100%;
+  overflow: hidden;
+}
+
+.item3 .maple-tab ul li {
+  list-style-type: none;
+  float: left;
+  width: 50%;
+  text-align: center;
+  color: #333;
+  font-size: 45px;
+  padding: 0.15625rem 0;
+  border-bottom: 0.026667rem solid #dedede;
+  cursor: pointer;
+}
+
+[data-dpr='2'] .item3 .maple-tab ul li {
+  font-size: 90px;
+}
+
+[data-dpr='3'] .item3 .maple-tab ul li {
+  font-size: 135px;
+}
+
+.item3 .m-border-right {
+  border-right: 0.013333rem solid #dedede;
+}
+
+.item3 .maple-tab .active {
+  color: #007aff;
+  border-bottom: 0.015625rem solid #007aff;
+}
+
+.item3 .tab-content-1,
+.item3 .tab-content-2 {
+  width: 100%;
+  height: auto;
+  padding: 0.15625rem 0;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.item3 .tab-content-1 .a1 {
+  width: 10rem;
+  height: 0.9375rem;
+}
+
+.item3 .tab-content-1 .a1 span {
+  font-size: 50px;
+  color: #000;
+  float: left;
+  margin-left: 0.46875rem;
+}
+
+[data-dpr='2'] .item3 .tab-content-1 .a1 span {
+  font-size: 100px;
+}
+
+[data-dpr='3'] .item3 .tab-content-1 .a1 span {
+  font-size: 150px;
+}
+
+.item3 .tab-content-1 .a1 .c {
+  position: relative;
+  float: left;
+  margin-top: 0.625rem;
+  margin-left: 0.9375rem;
+  width: 3.71875rem;
+  height: 3.71875rem;
+}
+
+.item3 .tab-content-1 .a1 .c p {
+  position: absolute;
+  bottom: 0;
+  width: 3.71875rem;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  font-size: 35px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+[data-dpr='2'] .item3 .tab-content-1 .a1 .c p {
+  font-size: 70px;
+}
+
+[data-dpr='3'] .item3 .tab-content-1 .a1 .c p {
+  font-size: 105px;
+}
+
+.item3 .tab-content-1 .a1 .a1-1 {
+  position: relative;
+  float: left;
+  margin-top: 0.625rem;
+  margin-left: 0.9375rem;
+  width: 3.71875rem;
+  height: 3.71875rem;
+  clear: both;
+  background: url("../img/a2.jpg") no-repeat;
+  background-size: cover;
+}
+
+.item3 .tab-content-1 .a1 .a1-1 p {
+  position: absolute;
+  bottom: 0;
+  width: 3.71875rem;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  font-size: 35px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+[data-dpr='2'] .item3 .tab-content-1 .a1 .a1-1 p {
+  font-size: 70px;
+}
+
+[data-dpr='3'] .item3 .tab-content-1 .a1 .a1-1 p {
+  font-size: 105px;
+}
+
+.item3 .tab-content-1 .a1 .a1-2 {
+  position: relative;
+  float: left;
+  margin-top: 0.625rem;
+  margin-left: 0.9375rem;
+  width: 3.71875rem;
+  height: 3.71875rem;
+  background: url("../img/a3.jpg") no-repeat;
+  background-size: cover;
+}
+
+.item3 .tab-content-1 .a1 .a1-2 p {
+  position: absolute;
+  bottom: 0;
+  width: 3.71875rem;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  font-size: 35px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+[data-dpr='2'] .item3 .tab-content-1 .a1 .a1-2 p {
+  font-size: 70px;
+}
+
+[data-dpr='3'] .item3 .tab-content-1 .a1 .a1-2 p {
+  font-size: 105px;
+}
+
+.item3 .tab-content-2 .b1 {
+  font-size: 40px;
+  width: 10rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  border-bottom: 0.015625rem solid #808080;
+}
+
+[data-dpr='2'] .item3 .tab-content-2 .b1 {
+  font-size: 80px;
+}
+
+[data-dpr='3'] .item3 .tab-content-2 .b1 {
+  font-size: 120px;
+}
+
+.item3 .tab-content-2 .b1 .b1-1 {
+  clear: both;
+  color: #CCCCCC;
+  float: left;
+  margin-left: 0.3125rem;
+}
+
+.item4 {
+  z-index: 5;
+  position: fixed;
+  bottom: 0;
+  width: 10rem;
+  height: 2.0625rem;
+  background-color: #ffffff;
+  border-top: 0.015625rem solid #808080;
+}
+
+.item4 #btn1 {
+  border: 0.03125rem solid #007aff;
+  color: #007aff;
+  width: 4.5rem;
+  height: 1.40625rem;
+  font-size: 50px;
+  margin-left: 0.375rem;
+  margin-top: 0.3125rem;
+}
+
+[data-dpr='2'] .item4 #btn1 {
+  font-size: 100px;
+}
+
+[data-dpr='3'] .item4 #btn1 {
+  font-size: 150px;
+}
+
+.item4 #btn2 {
+  border: 0.03125rem solid #007aff;
+  color: #ffffff;
+  background-color: #007aff;
+  width: 4.5rem;
+  height: 1.40625rem;
+  font-size: 50px;
+  margin-top: 0.3125rem;
+}
+
+[data-dpr='2'] .item4 #btn2 {
+  font-size: 100px;
+}
+
+[data-dpr='3'] .item4 #btn2 {
+  font-size: 150px;
+}

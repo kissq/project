@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width ,initial-scale=1 ,maximum-scale=1 ,user-scalable=no"/>-->
+    <title></title>
+    <!--<link rel="stylesheet/less" href="project/less/index3.less"/>-->
+    <script src="js/zepto-0.0.1-2016-09-09.min.js"></script>
+    <!--<script src="project/js/less.js"></script>-->
+    <link rel="stylesheet" href="css/font-awesome-0.0.1-2016-09-09.min.css"/>
+    <script src="js/swiper-3-0.0.1-2016-09-09.min.js"></script>
+    <link rel="stylesheet" href="css/swiper-3-0.0.1-2016-09-09.min.css"/>
+    <link rel="stylesheet" href="css/animate-0.0.1-2016-09-09.min.css"/>
+    <link rel="stylesheet" href="css/index3-0.0.1-2016-09-09.min.css"/>
+    <script>
+        ~function(){
+            resRem();
+            function resRem(){
+                var html=document.documentElement;
+                var winWidth=document.documentElement.clientWidth||document.body.clientWidth;
+                html.style.fontSize=winWidth/10+'px';
+                console.log(getComputedStyle(html).fontSize);
+            }
+            window.onresize=function(){
+                resRem();
+            }
+        }()
+    </script>
+</head>
+<body>
+<div class="header">
+    <span class="icon-chevron-left"></span>
+    <span>会员注册</span>
+</div>
+<div class="content">
+    <div class="item1">
+        <span>帐号</span>
+        <input type="text" placeholder="请输入账号(必填)"/>
+    </div>
+    <div class="item2">
+        <span>密码</span>
+        <input type="password" placeholder="请输入密码(必填)"/>
+    </div>
+    <div class="item3">
+        <span>密码</span>
+        <input type="password" placeholder="请确认密码(必填)"/>
+    </div>
+    <div class="item4">
+        <span>姓名</span>
+        <input type="text" placeholder="请输入姓名(必填)"/>
+    </div>
+    <div class="item5">
+        <span>邮箱</span>
+        <input type="email" placeholder="请输入邮箱"/>
+    </div>
+    <div class="item6">
+        <span>电话</span>
+        <input type="number" placeholder="请输入电话"/>
+    </div>
+    <div class="item7">
+        <span>留言</span>
+        <input type="text" placeholder="请输入留言"/>
+    </div>
+    <div class="item8">
+        <input type="text" placeholder="请输入验证码"/>
+        <div id="code">
+
+        </div>
+    </div>
+    <div class="item9">
+        <input type="button" value="注册"/>
+    </div>
+</div>
+
+<script src="js/index3-0.0.1-2016-09-09.min.js"></script>
+</body>
+</html>
