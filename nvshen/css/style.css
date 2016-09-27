@@ -1,0 +1,973 @@
+html,body,div,img,span,ul,li,p,a,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    background-color: #000000;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+#loading{
+    width: 640px;
+    height: 100%;
+    background-color: #000000;
+    margin: 0 auto;
+    position: relative;
+}
+#loading p{
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    color: #ffffff;
+}
+#box{
+    width: 640px;
+    height: 100%;
+    margin: 0 auto;
+    background: #000000;
+}
+#box .main-swiper{
+    width: 100%;
+    height: 100%;
+}
+#box .main-swiper .page{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.s1 .p1{
+    background: url("../images/0-bj.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.s1 .p1 .sp1{
+    position: absolute;
+    left: 50%;
+    top: 5%;
+}
+.s1 .p1 .sp1 .m1{
+    margin-left: -50%;
+}
+.s1 .p1 .sp2{
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+}
+.s1 .p1 .sp2 .m2{
+    margin-left: -50%;
+}
+.s1 .p1 .btn{
+    display: block;
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    left: 62%;
+    bottom: 10%;
+    border-radius: 50%;
+}
+.s1 .p2{
+    background: url("../images/1-bj.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.s1 .p2 .sp1{
+    position: absolute;
+    left: 50%;
+    top: 5%;
+}
+.s1 .p2 .sp1 .m1{
+    margin-left: -50%;
+}
+.s1 .p2 .sp2{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.s1 .p2 .sp2 .m2{
+    margin-left: -50%;
+    margin-top: -40%;
+}
+.s1 .p2 .sp3{
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+}
+.s1 .p2 .sp3 .m3{
+    margin-left: -50%;
+}
+.s1 .p2 .sp1 span{
+    display: block;
+    color: #ffffff;
+    font-size: 30px;
+    margin-left: -50%;
+    margin-top: -30%;
+    width: 110px;
+    text-align: center;
+}
+.s1 .p3{
+    background: url("../images/2-bj.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.logo{
+    padding: 30px 30px;
+    position: relative;
+    z-index: 10;
+}
+.logo .logoLeft{
+    float: left;
+}
+.logo .logoRight{
+    float:right;
+}
+.s1 .p3 .sp1 {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+}
+.s1 .p3 .sp1 .m1{
+    margin-left: -50%;
+}
+.s1 .p3 .sp2 {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+}
+.s1 .p3 .sp2 .m2{
+    margin-left: -50%;
+}
+.s1 .p3 .sp3 {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+}
+.s1 .p3 .sp3 .m3{
+    margin-left: -50%;
+}
+.s1 .p3 .car{
+    width: 100%;
+    position: absolute;
+    bottom: 15%;
+}
+.s1 .p3 .sp4{
+    position: absolute;
+    left: 50%;
+    bottom: 3%;
+}
+.s1 .p3 .sp4 .m4{
+    margin-left: -50%;
+   animation: p3m4scale 0.7s ease-In infinite alternate;
+}
+@-webkit-keyframes p3m4scale {
+    from{
+        -webkit-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
+    }
+    to{
+        -webkit-transform: scale(1.1, 1.1);
+        -moz-transform: scale(1.1, 1.1);
+        -ms-transform: scale(1.1, 1.1);
+        -o-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1);
+    }
+}
+@keyframes p3m4scale {
+    from{
+        -webkit-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
+    }
+    to{
+        -webkit-transform: scale(1.1, 1.1);
+        -moz-transform: scale(1.1, 1.1);
+        -ms-transform: scale(1.1, 1.1);
+        -o-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1);
+    }
+}
+.s1 .p4{
+    overflow: hidden;
+}
+.s1 .p4 .road img{
+    display: block;
+}
+.s1 .p4 .road{
+    position: absolute;
+    bottom: 0;
+}
+.s1 .p4 .sp1{
+    position: absolute;
+    left: 50%;
+    bottom: 25%;
+    opacity: 0;
+}
+.s1 .p4 .sp2{
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+}
+.s1 .p4 .sp2 .m2{
+   margin-left: -50%;
+    visibility: hidden;
+}
+.s1p4m2Anim{
+
+    -webkit-animation: s1p4m2Anim 1s ease-In both;
+    -o-animation: s1p4m2Anim 1s ease-In both;
+    animation: s1p4m2Anim 1s ease-In both;
+}
+@keyframes s1p4m2Anim {
+    from{
+        visibility: visible;
+        -webkit-transform: scale(1.4, 1.4);
+        -moz-transform: scale(1.4, 1.4);
+        -ms-transform: scale(1.4, 1.4);
+        -o-transform: scale(1.4, 1.4);
+        transform: scale(1.4, 1.4);
+    }
+    to{
+        visibility: visible;
+        -webkit-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+}
+@-webkit-keyframes s1p4m2Anim {
+    from{
+        visibility: visible;
+        -webkit-transform: scale(1.4, 1.4);
+        -moz-transform: scale(1.4, 1.4);
+        -ms-transform: scale(1.4, 1.4);
+        -o-transform: scale(1.4, 1.4);
+        transform: scale(1.4, 1.4);
+    }
+    to{
+        visibility: visible;
+        -webkit-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+}
+.s1 .p4 .sp3{
+    opacity: 0;
+    position: absolute;
+    left: 41%;
+    bottom: 43%;
+}
+.s1p4m3anim{
+    -webkit-animation: s1p4m3Anim 1s ease both;
+    -o-animation: s1p4m3Anim 1s ease both;
+    animation: s1p4m3Anim 1.5s ease both;
+}
+@keyframes s1p4m3Anim {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-webkit-keyframes s1p4m3Anim {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.s1 .p4 .sp4{
+   opacity: 0;
+    position: absolute;
+    left: 50%;
+    bottom: 22%;
+}
+.s1p4m4Anim{
+    -webkit-animation: s1p4m4Anim 0.5s ease infinite;
+    -o-animation: s1p4m4Anim 0.5s ease infinite;
+    animation: s1p4m4Anim 0.5s ease infinite;
+}
+@keyframes s1p4m4Anim {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-webkit-keyframes s1p4m4Anim {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.s1 .p4 .sp4 .m4{
+    margin-left: -15%;
+}
+.s1 .p4 .sp5{
+    opacity: 0;
+    position: absolute;
+    left: 25%;
+}
+.s1 .p4 .sp6{
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+}
+.s1 .p4 .sp6 .m6{
+    margin-left: -50%;
+}
+.s1 .p5{
+    background: url("../images/4-bj.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.s1 .p5 span {
+    opacity: 0;
+}
+.s1 .p5 .sp1{
+    position: absolute;
+    left: 50%;
+    top: 35%;
+}
+.s1 .p5 .sp3{
+    position: absolute;
+    left: 40%;
+    top: 10%;
+    animation-delay: 0.2s;
+}
+.s1 .p5 .sp3 .m3{
+    position: relative;
+    left: 51%;
+    margin-left: -50%;
+}
+.s1 .p5 .sp3{
+    background: url("../images/wave.png")no-repeat;
+    background-position: 38% -80%;
+}
+.back{
+    -webkit-animation: move 5s linear infinite alternate;
+    -o-animation: move 5s linear infinite alternate;
+    animation: move 5s linear infinite alternate;
+}
+@keyframes move {
+    0%{
+        background-position: 0% -80%;
+    }
+    100%{
+        background-position: 100% -80%;
+    }
+}
+@-webkit-keyframes move {
+    0%{
+        background-position: 0% -80%;
+    }
+    100%{
+        background-position: 100% -80%;
+    }
+}
+.s1 .p5 .sp1 .m1{
+    margin-left: -50%;
+}
+.s1 .p5 .sp2{
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    animation-delay: 0.3s;
+}
+.s1 .p5 .sp2 .m2{
+    margin-left: -50%;
+}
+.s1 .p5 .sp4{
+    animation-delay: 0.6S;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+}
+.s1 .p5 .sp4 .m4{
+    margin-left: -50%;
+}
+.move1{
+    -webkit-animation: move1 1s linear infinite alternate;
+    -o-animation: move1 1s linear infinite alternate;
+    animation: move1 1s linear infinite alternate;
+}
+@-webkit-keyframes move1 {
+    0%{
+        opacity:1;
+        bottom: 5%;
+    }
+    100%{
+        opacity: 0.7;
+        bottom: 7%;
+    }
+}
+@keyframes move1 {
+    0%{
+        opacity:1;
+        bottom: 5%;
+    }
+    100%{
+        opacity: 0.7;
+        bottom: 7%;
+    }
+}
+.s2 .p21{
+    overflow: hidden;
+}
+.s2 .p21 .road{
+    position: absolute;
+    bottom: 0;
+}
+.s2 .p21 .sp1 {
+    position: absolute;
+    left: 50%;
+    bottom: 25%;
+}
+.s2 .p21 .sp2{
+    position: absolute;
+    left: 41%;
+    bottom: 43%;
+}
+.s2 .p21 .sp3{
+    opacity: 0;
+    position: absolute;
+    left: 47%;
+    bottom: 22%;
+}
+.s2move1{
+    -webkit-animation: s2move1 1s linear infinite;
+    -o-animation: s2move1 1s linear infinite;
+    animation: s2move1 1s linear infinite;
+}
+@keyframes s2move1 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.s2 .p21 .sp4{
+    position: absolute;
+    right: 25%;
+    top: 30%;
+    opacity: 0;
+    animation-delay: 1s;
+}
+.s2 .p21 .sp5{
+    position: absolute;
+    left: 10%;
+    bottom: 20%;
+    opacity: 0;
+    animation-delay: 1.5s;
+}
+.s2 .p21 .sp6{
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    opacity: 0;
+    animation-delay: 1.8s;
+}
+.s2 .p21 .sp6 .m6{
+    margin-left: -50%;
+}
+.s2 .p22 .sp1{
+    position: absolute;
+    bottom: 0;
+}
+.s2 .p22 .sp2{
+    position: absolute;
+    left: 40%;
+    top: 10%;
+}
+.s2 .p22 .sp2 .m2{
+    position: relative;
+    left: 51%;
+    margin-left: -50%;
+}
+.s2 .p22 .sp2{
+    background: url("../images/wave.png")no-repeat;
+    background-position: 38% -60%;
+}
+.back1{
+    -webkit-animation: back1 5s linear infinite alternate;
+    -o-animation: back1 5s linear infinite alternate;
+    animation: back1 5s linear infinite alternate;
+}
+@keyframes back1 {
+    0%{
+        background-position: 0% -60%;
+    }
+    100%{
+        background-position: 100% -60%;
+    }
+}
+@-webkit-keyframes back1 {
+    0%{
+        background-position: 0% -60%;
+    }
+    100%{
+        background-position: 100% -60%;
+    }
+}
+.s2 .p22 .sp3{
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    opacity: 0;
+}
+.s2 .p22 .sp3 .m3{
+    margin-left: -50%;
+}
+.s2 .p22 .sp4{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+}
+.s2 .p22 .sp4 .m4{
+    margin-left: -50%;
+}
+.s2 .p22 .sp5{
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    opacity: 0;
+}
+.s2 .p22 .sp5 .m5{
+    margin-left: -50%;
+}
+.s2 .p22 .sp6{
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    opacity: 0;
+}
+.s2 .p22 .sp6 .m6{
+    margin-left: -50%;
+}
+.back2{
+    -webkit-animation: back2 1s linear infinite alternate;
+    -o-animation: back2 1s linear infinite alternate;
+    animation: back2 1s linear infinite alternate;
+}
+@keyframes back2 {
+    0%{
+        bottom: 10%;
+        opacity: 0.7;
+    }
+    100%{
+        bottom: 11%;
+        opacity: 1;
+    }
+}
+@-webkit-keyframes back2 {
+    0%{
+        bottom: 10%;
+        opacity: 0.7;
+    }
+    100%{
+        bottom: 11%;
+        opacity: 1;
+    }
+}
+.back3{
+    -webkit-animation: back3 0.5s ease-out infinite;
+    -o-animation: back3 0.5s ease-out infinite;
+    animation: back3 0.5s ease-out infinite;
+}
+@keyframes back3 {
+     0%{
+         opacity: 0;
+     }
+     100%{
+         opacity: 1;
+     }
+ }
+@-webkit-keyframes back3 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.s3 .p31{
+    overflow: hidden;
+}
+.s3 .p31 .road{
+    position: absolute;
+    bottom: 0;
+}
+.s3 .p31 .road img{
+    display: block;
+}
+.s3 .p31 .sp1 {
+    position: absolute;
+    left: 50%;
+    bottom: 25%;
+}
+.s3 .p31 .sp2{
+    position: absolute;
+    left: 41%;
+    bottom: 43%;
+}
+.s3 .p31 .sp3{
+    position: absolute;
+    left: 10%;
+    bottom: 15%;
+    background: url("../images/7-1-2.png") no-repeat;
+    background-position: left center;
+    opacity: 0;
+}
+.s3 .p31 .sp4{
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    opacity: 0;
+    animation-delay: 0.3s;
+
+}
+.s3 .p31 .sp4 .m4{
+    margin-left: -50%;
+}
+.s3 .p32{
+    background: url("../images/8-bj.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+.s3 .p32 span{
+    opacity: 0;
+}
+.s3 .p32 .sp1{
+    position: absolute;
+    left: 40%;
+    top: 10%;
+}
+.s3 .p32 .sp1 .m1{
+    position: relative;
+    left: 51%;
+    margin-left: -50%;
+}
+.s3 .p32 .sp1{
+    background: url("../images/wave.png")no-repeat;
+    background-position: 38% -60%;
+}
+.s3 .p32 .sp2{
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    opacity: 0;
+}
+.s3 .p32 .sp2 .m2{
+    margin-left: -50%;
+}
+.s3 .p32 .sp3{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+}
+.s3 .p32 .sp3 .m3{
+    margin-left: -50%;
+}
+.s3 .p32 .sp4{
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    opacity: 0;
+    animation-delay: .8s;
+}
+.s3 .p32 .sp4 .m4{
+    margin-left: -50%;
+}
+.s4 .p41{
+    background: url("../images/9-bj.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.s4 .p41 .sp1{
+    position: absolute;
+    left: 40%;
+    top: 10%;
+}
+.s4 .p41 .sp1 .m1{
+    position: relative;
+    left: 51%;
+    margin-left: -50%;
+}
+.s4 .p41 .sp1{
+    background: url("../images/wave.png")no-repeat;
+    background-position: 38% -50%;
+}
+.s4 .p41 .sp2{
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    opacity: 0;
+}
+.s4 .p41 .sp2 .m2{
+    margin-left: -50%;
+}
+.s4 .p41 .sp3{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+}
+.s4 .p41 .sp3 .m3{
+    margin-left: -50%;
+}
+.s4 .p41 .sp4{
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    opacity: 0;
+    animation-delay: .8s;
+}
+.s4 .p41 .sp4 .m4{
+    margin-left: -50%;
+}
+.back4{
+    -webkit-animation: back4 5s linear infinite alternate;
+    -o-animation: back4 5s linear infinite alternate;
+    animation: back4 5s linear infinite alternate;
+}
+@keyframes back4 {
+    0%{
+        background-position: 0% -50%;
+    }
+    100%{
+        background-position: 100% -50%;
+    }
+}
+@-webkit-keyframes back4 {
+    0%{
+        background-position: 0% -50%;
+    }
+    100%{
+        background-position: 100% -50%;
+    }
+}
+.s5 .p51{
+    overflow: hidden;
+}
+.s5 .p51 .road{
+    position: absolute;
+    bottom: 0;
+}
+.s5 .p51 .road img{
+    display: block;
+}
+.s5 .p51 .sp1 {
+    position: absolute;
+    left: 50%;
+    bottom: 25%;
+}
+.s5 .p51 .sp2{
+    position: absolute;
+    left: 41%;
+    bottom: 43%;
+}
+.s5 .p51 .sp3{
+    opacity: 0;
+    position: absolute;
+    left: 47%;
+    bottom: 22%;
+}
+.s5 .p51 .sp4{
+    position: absolute;
+    left: 10%;
+    bottom: 15%;
+    opacity: 0;
+}
+.s5 .p51 .sp5{
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    opacity: 0;
+}
+.s5 .p51 .sp5 .m5{
+    margin-left: -50%;
+}
+.s5 .p52{
+    background: url("../images/11-bj.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.s5 .p52 .sp1{
+    position: absolute;
+    left: 40%;
+    top: 10%;
+}
+.s5 .p52 .sp1 .m1{
+    position: relative;
+    left: 51%;
+    margin-left: -50%;
+}
+.s5 .p52 .sp1{
+    background: url("../images/wave.png")no-repeat;
+    background-position: 38% -40%;
+}
+.s5 .p52 .sp2{
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    opacity: 0;
+}
+.s5 .p52 .sp2 .m2{
+    margin-left: -50%;
+}
+.s5 .p52 .sp3{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+}
+.s5 .p52 .sp3 .m3{
+    margin-left: -50%;
+}
+.s5 .p52 .sp4{
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    opacity: 0;
+    animation-delay: .8s;
+}
+.s5 .p52 .sp4 .m4{
+    margin-left: -50%;
+}
+.back5{
+    -webkit-animation: back5 5s linear infinite alternate;
+    -o-animation: back5 5s linear infinite alternate;
+    animation: back5 5s linear infinite alternate;
+}
+@keyframes back5 {
+    0%{
+        background-position: 0% -40%;
+    }
+    100%{
+        background-position: 100% -40%;
+    }
+}
+@-webkit-keyframes back5 {
+    0%{
+        background-position: 0% -40%;
+    }
+    100%{
+        background-position: 100% -40%;
+    }
+}
+.s6 .p61{
+    overflow: hidden;
+}
+.s6 .p61 .road{
+    position: absolute;
+    bottom: 0;
+}
+.s6 .p61 .road img{
+    display: block;
+}
+.s6 .p61 .sp1 {
+    position: absolute;
+    left: 50%;
+    bottom: 25%;
+}
+.s6 .p61 .sp2{
+    position: absolute;
+    left: 41%;
+    bottom: 43%;
+}
+.s6 .p61 .sp3{
+    position: absolute;
+    left: 10%;
+    bottom: 15%;
+    opacity: 0;
+    background: url("../images/7-1-2.png") no-repeat;
+    background-position: left center;
+    visibility: hidden;
+}
+.s6 .p61 .sp4{
+    position: absolute;
+    left: 10%;
+    bottom: 12%;
+    opacity:0;
+    visibility: hidden;
+}
+.s6 .p61 .sp6{
+    opacity: 0;
+    position: absolute;
+    left: 47%;
+    bottom: 22%;
+}
+.s6 .p61 .sp5{
+    position: absolute;
+    opacity: 0;
+    left: 50%;
+    top: 25%;
+}
+.s6 .p61 .sp7{
+    position: absolute;
+    left: 41%;
+    top: -20%;
+    opacity:0;
+}
+.s6 .p61 .sp8{
+    position: absolute;
+    left: 47%;
+    top: 35%;
+    opacity:0;
+}
+.s6 .p61 .sp9{
+    position: absolute;
+    opacity: 0;
+    left: 10%;
+    bottom: 15%;
+    animation-delay: .5s;
+}
+.s6 .p61 .sp10{
+    position: absolute;
+    opacity: 0;
+    left: 50%;
+    bottom: 10%;
+    animation-delay: 1s;
+}
+.s6 .p61 .sp10 .m10{
+    margin-left: -50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
