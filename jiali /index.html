@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" href="css/jquery.fullPage.css"/>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/animate.min.css"/>
+    <script src="js/index.js"></script>
+    <script>
+        $(function(){
+            $('#dowebok').fullpage({
+                sectionsColor: ['#646464', '#0ea9b1', '#7BAABE','#daa520','#808080'],
+                //设置每一屏幕的背景颜色
+                scrollingSpeed:1000,
+                // 设置滚动的花费时间
+                easingcss3:'ease-in-out',
+                //运动曲线
+                continuousVertical: true,
+                //到达最后一屏后，是否回到首屏
+                'navigation': true,
+                // 右侧显示小圆点
+
+                /*顶部导航栏*/
+                anchors:['page1','page2','page3','page4','page5'],
+                // 值为绑定菜单的类名或ID名，需先设置achors才能生效
+                menu:'#menu',
+                /*控制首屏*/
+                afterLoad: function(anchorLink, index){
+                    if(index==1){
+                        $('.section1 .me').addClass('move2');
+                        $('.section1 .demo').addClass('move2');
+                        $('.section1 p').addClass('move1');
+                    }
+                    if(index==2){
+                        $('.section2 .text').addClass('move4').css({display:'block'});
+                    }
+                    if(index==3){
+                        $('.section3 .project').addClass('move6').css({display:'block'});
+                    }
+                    if(index==4){
+                        $('.section4 .project').addClass('move7').css({display:'block'});
+                    }
+                    if(index==5){
+                        $('.section5 p').addClass('move7').css({display:'block'});
+                    }
+                },
+
+                //来判断当前的屏幕
+                onLeave: function(index, nextIndex, direction){
+                    if(index==1){
+                        $('.section1 p').removeClass('move1');
+                        $('.section1 .demo').removeClass('move2');
+                        $('.section1 .me').removeClass('move2');
+                        $('.section1 .me').addClass('move3');
+                        $('.section1 .demo').addClass('move3');
+                        $('.section1 p').addClass('move3');
+
+                    }else if(index==2){
+                        $('.section2 .text').removeClass('move4');
+                        $('.section2 .text').addClass('move3');
+
+                    }else if(index==3){
+                        $('.section3 .project').removeClass('move6');
+                        $('.section3 .project').addClass('move3');
+                    }else if(index==4){
+                        $('.section4 .project').removeClass('move7');
+                        $('.section4 .project').addClass('move3');
+                    }
+                    if(index==5){
+                        $('.section5 p').removeClass('move7');
+                        $('.section5 p').addClass('move3');
+
+                    }
+                    if(nextIndex==1){ //滚动到1屏幕
+                        $('.section1 p').removeClass('move1');
+                        $('.section1 .me').removeClass('move2');
+                        $('.section1 .demo').removeClass('move2');
+                    }else if(nextIndex==2){//滚动到2屏幕
+                        $('.section2 .text').removeClass('move4').css({display:'none'});
+                    }else if(nextIndex==3){//滚动到2屏幕
+                        $('.section3 .project').removeClass('move6').css({display:'none'});
+                    }else if(nextIndex==4){//滚动到2屏幕
+                        $('.section4 .project').removeClass('move7').css({display:'none'});
+                    }else if(nextIndex==5){
+                        $('.section5 p').removeClass('move7').css({display:'none'});
+                    }
+                },
+
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="menu">
+    <div class="inner">
+        <ul>
+            <li data-menuanchor="page1" class="active"><a href="#page1">关于我</a></li>
+            <li data-menuanchor="page2"><a href="#page2">技能</a></li>
+            <li data-menuanchor="page3"><a href="#page3">APP作品</a></li>
+            <li data-menuanchor="page4"><a href="#page4">PC作品</a></li>
+            <li data-menuanchor="page5"><a href="#page5">个人评价</a></li>
+        </ul>
+        <div class=".logo">
+            <img src="img/logo.jpg.JPG" alt="" width="80"/>
+        </div>
+        <div class="music">
+            <embed src="Justin%20Bieber-Baby.mp3"></embed>
+        </div>
+    </div>
+</div>
+<div id="dowebok">
+    <div class="section section1">
+        <div class="me move2">
+            <img src="img/me.JPG" alt=""/>
+        </div>
+        <div class="demo move2">
+            About Me
+        </div>
+        <p class="name move1">姓名：杨廷贯</p>
+        <p class="sex move1">性别：男</p>
+        <p class="age move1">年龄:23</p>
+        <p class="college move1">学历：专科</p>
+        <p class="target move1">求职意向：前端工程师</p>
+        <p class="time move1">工作年限：2年</p>
+        <p class="tel move1">电话：18835578607</p>
+        <p class="eamail move1">   E — mail：18835578607@163.com</p>
+        <p class="zuoyoum move1">座右铭：没有不会做，只有不想学</p>
+    </div>
+    <div class="section section2">
+        <h2 class="myskill">MY-SKILL</h2>
+        <div class="ripple">
+            <div class="r1"></div>
+            <div class="r2"></div>
+            <div class="r3"></div>
+        </div>
+        <div class="pic">
+            <div class="pic1">
+                <img src="img/js.png" alt="" width="128"/>
+                <img src="img/photoshop.png" alt="" width="128"/>
+                <img src="img/css-icon.png" alt="" width="128"/>
+            </div>
+        </div>
+        <div class="text">
+            <p>1、精通HTML、CSS、运用DIV+CSS进行网页的布局，熟悉W3C网页标准；</p><br/>
+            <p>2、熟练掌握JavaScript,jQuary 等特效代码的修改及编写；</p><br/>
+            <p>3、熟悉页面优化，了解各主流浏览器特性，能处理浏览器兼容的问题；</p><br/>
+            <p>4、具有优良的编程风格和习惯，有丰富的网站美工制作经验，及项目开发经验； </p><br/>
+            <p>5、熟悉js面向对象中的继承、封装、单体模式、工厂模式、构造函数、原型模式等,
+                坚持降低 程序耦合度 、提高代码复用性的设计理念，使代码高度模块化。</p><br/>
+            <p>6、可以运用ajax、jsonp 、CORS技术与后台处理数据，熟悉浏览器和服务器交互。</p><br/>
+            <p>7、熟练运用 rem 和 百分百进行移动端布局。diaplay:flex  弹性布局。</p><br/>
+            <p>8、熟练运用less编写css，并转化。</p><br/>
+            <p>9、熟练运用grunt 进行代码压缩，等常规操作。</p><br/>
+            <p>10、根据需求自定义扩展移动端事件。</p><br/>
+            <p>11、熟练运用tween动画 、JQ动画、css3动画。</p><br/>
+            <p>12、有所了解微信公众号开发，熟练运用js  sdk</p><br/>
+            <p>13、了解掌握MUI   H5+   Runtime   进行跨平台App开发。</p><br/>
+            <p>14、熟悉git基本用法。</p><br/>
+            <p>15、目前正在强化H5技术，并学习Node.js。</p>
+        </div>
+    </div>
+    <div class="section section3">
+        <div class="ripple">
+            <div class="r1"></div>
+            <div class="r2"></div>
+            <div class="r3"></div>
+        </div>
+        <div class="display">APP Display</div>
+        <div class="project">
+            <ul>
+                <li><img src="img/1.png" alt="" width="700"/></li>
+                <li><img src="img/6..png" alt="" width="700"/></li>
+                <li><img src="img/7.png" alt="" width="700"/></li>
+                <li><img src="img/5.png" alt="" width="700"/></li>
+            </ul>
+        </div>
+    </div>
+    <div class="section section4">
+        <div class="ripple">
+            <div class="r1"></div>
+            <div class="r2"></div>
+            <div class="r3"></div>
+        </div>
+        <div class="display">PC Display</div>
+        <div class="project">
+            <ul>
+                <li><img src="img/zaozuo.jpg" alt="" width="700"/></li>
+                <li><img src="img/yisheng.png" alt="" width="700"/></li>
+                <li><img src="img/jimi.png" alt="" width="700"/></li>
+                <li><img src="img/yuanlin.png" alt="" width="700"/></li>
+            </ul>
+        </div>
+    </div>
+    <div class="section section5">
+        <div class="ripple">
+            <div class="r1"></div>
+            <div class="r2"></div>
+            <div class="r3"></div>
+        </div>
+        <div class="display">Evaluation</div>
+        <p>1、有良好的团队意识。</p>
+
+        <p>2、有较强的责任心、耐心。</p>
+
+        <p>3、性格比较开朗、能承受较强的工作压力</p>
+
+        <p>4、有较强的学习能力。</p>
+    </div>
+</div>
+
+</body>
+</html>
