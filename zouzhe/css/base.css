@@ -1,0 +1,53 @@
+html, body {
+  color: transparent;
+  height: 100%;
+  width: 100%; }
+
+#content {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+* {
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out; }
+
+@-webkit-keyframes float1 {
+  0% {
+    left: 10%; }
+
+  50% {
+    left: 5%; }
+
+  100% {
+    left: 10%; } }
+@-webkit-keyframes float2 {
+  0% {
+    right: 28%; }
+
+  50% {
+    right: 35%; }
+
+  100% {
+    right: 28%; } }
+@-webkit-keyframes slowMove {
+  0% {
+    background-position: 0px center; }
+
+  50% {
+    background-position: -50px center; }
+
+  100% {
+    background-position: 0px center; } }
+div#fp-nav span {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #FFF;
+  background: transparent;
+  border-radius: 50%; }
+div#fp-nav .active span {
+  background-color: #fff; }
+
+.hide {
+  opacity: 0; }

@@ -1,0 +1,151 @@
+html,body,div,span,img,a,ul,li,p{
+
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+}
+img{
+    border: none;
+}
+
+ul,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#bg {
+    width: 640px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#bg .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.page1{
+    background-color: brown;
+}
+.page2{
+    background-color: blueviolet;
+}
+.page3{
+    background-color: cadetblue;
+}
+
+.swiper-pagination div{
+
+    width: 20px!important;
+
+    height: 20px!important;
+
+    margin-top: 50px!important;
+
+}
+
+.swiper-pagination .swiper-pagination-bullet-active{
+    background-color: #ffffff!important;
+}
+
+.swiper-wrapper{
+    font-size: 0!important;
+}
+
+.swiper-wrapper .swiper-slide{
+
+    background: url("../images/bg.jpg") no-repeat;
+
+    /*按比例缩放背景图片直至填充整个元素*/
+    background-size: cover;
+
+    background-position: top center;
+}
+
+.page1 .p1-m1{
+
+    position: absolute;
+
+    top: 7%;
+
+}
+
+.page1 .p1-m2{
+
+    position: absolute;
+
+    top: 16%;
+}
+
+.page1 .p1-m3{
+
+    position: absolute;
+
+    top: 50%;
+
+    margin-top: -188px;
+}
+
+.page1 .p1-m4{
+
+    position: absolute;
+
+    top: 50%;
+
+    margin-top: -188px;
+}
+
+.page1 .p1-m5{
+
+    position: absolute;
+
+    bottom: 10%;
+}
+
+.arrow{
+    position: absolute;
+
+    bottom: 2%;
+
+    z-index: 100;
+
+    left: 50%;
+
+}
+
+.arrow img{
+
+    width: 40px;
+    margin-left: -50%;
+    /*visibility: visible!important;*/
+}
+.p2-m1{
+    margin-bottom: 8%;
+}
+.p2-m2{
+    margin-bottom: 3%;
+}
+.p3-m1{
+    margin-top: 8%;
+    margin-bottom: 7%;
+}
+.p3-m2{
+    margin-bottom: 10%;
+}
+.p3-m4{
+    position: absolute;
+    left: 2%;
+}
+.p3-m4{
+    position: absolute;
+    right: 2%;
+    top: 50%;
+
+}
